@@ -1,0 +1,49 @@
+name: Archive and Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+env:
+    SXSC_REPO: 'https://github.com/Atlas-OS/sxsc'
+    FILENAME: 'Revi-PB-${{ github.ref_name }}.apbx'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+        # Credits to echnobas, Atlas and all the contributors.
+      - name: Git clone sxsc
+        run: |
+          git clone --depth=1 ${{ env.SXSC_REPO }} sxsc-src
+
+      - name: Build cab
+        run: |
+          pip install -r requirements.txt | Out-Null 
+          New-Item -ItemType Directory -Force -Path "..\release" | Out-Null
+          foreach ($file in Get-ChildItem -Path "..\" -Recurse -File -Filter "*.yaml") {
+            Copy-Item -Path $file.FullName -Destination "cfg.yaml" -Force | Out-Null
+            (Get-Content cfg.yaml) -replace 'version: 1.0.0.0', "version: ${{ github.ref_name }}" | Set-Content cfg.yaml -Force
+            python sxsc.py
+            if ($LASTEXITCODE -ne 0) { exit 1 }
+            .\build.bat
+            Move-Item -Path *.cab -Destination "..\release\" -Force | Out-Null
+            .\clean.bat
+          }
+        working-directory: sxsc-src
+        #
+      
+  
+      - name: Release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.TOKEN }}
+          file: release/*.cab
+          tag: ${{ github.ref }}
+          overwrite: true
+          file_glob: true
