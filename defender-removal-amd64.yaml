@@ -22,13 +22,13 @@ updates:
           - key: DisableAntiSpyware
             type: REG_DWORD
             value: 1
-      - key_name: >-
-          HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Defender
-        perUserVirtualization: false
-        values:
-          - key: DisableAntiSpyware
-            type: REG_DWORD
-            value: 1
+      # - key_name: >-
+      #     HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Defender
+      #   perUserVirtualization: false
+      #   values:
+      #     - key: DisableAntiSpyware
+      #       type: REG_DWORD
+      #       value: 1
         # MDCoreSvc
       - key_name: >-
           HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MDCoreSvc
