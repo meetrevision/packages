@@ -29,14 +29,14 @@ updates:
       #     - key: DisableAntiSpyware
       #       type: REG_DWORD
       #       value: 1
-        # MDCoreSvc
-      - key_name: >-
-          HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MDCoreSvc
-        perUserVirtualization: false
-        values:
-          - key: Start
-            type: REG_DWORD
-            value: 4
+        # MDCoreSvc - prevents the package from being installed
+      # - key_name: >-
+      #     HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MDCoreSvc
+      #   perUserVirtualization: false
+      #   values:
+      #     - key: Start
+      #       type: REG_DWORD
+      #       value: 4
         # Security Center (We will most likely remove the actual component later)
       - key_name: >-
           HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wscsvc
