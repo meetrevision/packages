@@ -3,6 +3,16 @@ package: Revision-ReviOS-SystemPackages-Removal
 target_arch: arm64
 version: 1.0.0.0
 updates:
+  - target_component: Adobe-Flash-For-Windows
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Adobe-Flash-For-Windows
+    target_arch: arm64.arm
+    version: 38655.38527.65535.65535
+  - target_component: Adobe-Flash-For-Windows
+    target_arch: arm64.x86
+    version: 38655.38527.65535.65535
+
   - target_component: Microsoft-Windows-AcProxy
     target_arch: arm64
     version: 38655.38527.65535.65535
@@ -11,11 +21,22 @@ updates:
     target_arch: arm64
     version: 38655.38527.65535.65535
 
+  - target_component: Microsoft-Windows-AdvertisingId
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+
   - target_component: Microsoft-Windows-CEIPEnable-Adm
     target_arch: arm64
     version: 38655.38527.65535.65535
 
   - target_component: Microsoft-Windows-CEIPEnable-Adm.Resources
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-Windows-CEIPEnable-Adm-Deployment
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-CEIPEnable-Adm-Deployment-LanguagePack
     target_arch: arm64
     version: 38655.38527.65535.65535
 
@@ -306,7 +327,13 @@ updates:
     target_arch: arm64
     version: 38655.38527.65535.65535
 
+  - target_component: Microsoft-Windows-Compat-CompatTelRunner-DailyTask
+    target_arch: arm64
+    version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-Compat-GeneralTel
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Compat-Inventory-NonArpInv
     target_arch: arm64
     version: 38655.38527.65535.65535
 
@@ -388,6 +415,7 @@ updates:
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-Unified-Telemetry-Client-WoWOnly
   #   target_arch: arm64.x86
+  #   version: 38655.38527.65535.65535
 
   - target_component: Microsoft-Windows-Unified-Telemetry-Client.resources
     target_arch: arm64
@@ -595,6 +623,15 @@ updates:
     target_arch: arm64
     version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-Edge-Angle
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Edge-AXHost
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-EdgeChromium
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-EdgeChromium-FirstTimeInstaller
     target_arch: arm64
     version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-Edge-EdgeContent

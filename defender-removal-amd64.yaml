@@ -154,10 +154,19 @@ updates:
   - target_component: Windows-Defender-AM-Default-Definitions-Deployment
     target_arch: amd64
     version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-AM-Default-Definitions-Deployment-LanguagePack
+    target_arch: amd64
+    version: 38655.38527.65535.65535
   - target_component: Windows-Defender-AM-Engine
     target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Windows-Defender-AM-Sigs
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-AppLayer-Group-Deployment
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-AppLayer-Group-Deployment-LanguagePack
     target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Windows-Defender-ApplicationGuard-Inbox-Deployment
@@ -183,6 +192,12 @@ updates:
     version: 38655.38527.65535.65535
   - target_component: Windows-Defender-Branding.Resources
     target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-Core-Group-Deployment
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-Core-Group-Deployment-LanguagePack
+    target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Windows-Defender-Drivers
     target_arch: amd64
@@ -220,7 +235,19 @@ updates:
   - target_component: Windows-Defender-Group-Policy-Deployment-LanguagePack
     target_arch: amd64
     version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-Management-Group-Deployment
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-Management-Group-Deployment-LanguagePack
+    target_arch: amd64
+    version: 38655.38527.65535.65535
   - target_component: Windows-Defender-Management-MDM
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-Management-MDM-Group-Deployment
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-Management-MDM-Group-Deployment-LanguagePack
     target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Windows-Defender-Management-Onecore
@@ -235,10 +262,22 @@ updates:
   - target_component: Windows-Defender-Management-Powershell
     target_arch: x86
     version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-Management-Powershell-Group-Deployment
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-Management-Powershell-Group-Deployment-LanguagePack
+    target_arch: amd64
+    version: 38655.38527.65535.65535
   - target_component: Windows-Defender-Management-V1
     target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Windows-Defender-Nis-Drivers
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-Nis-Group-Deployment
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Defender-Nis-Group-Deployment-LanguagePack
     target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Windows-Defender-Nis-Service
@@ -454,5 +493,16 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-SmartScreen-Adm.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  # W10
+  - target_component: Microsoft-Windows-SecHealthUI.AppxMain
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-SecHealthUI.AppxMain.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-SecHealthUI.AppxSetup
     target_arch: amd64
     version: 38655.38527.65535.65535

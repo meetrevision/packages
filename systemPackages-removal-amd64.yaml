@@ -3,6 +3,13 @@ package: Revision-ReviOS-SystemPackages-Removal
 target_arch: amd64
 version: 1.0.0.0
 updates:
+  - target_component: Adobe-Flash-For-Windows
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Adobe-Flash-For-Windows
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+
   - target_component: Microsoft-Windows-AcProxy
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -11,11 +18,21 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
 
-  - target_component: Microsoft-Windows-CEIPEnable-Adm
+  - target_component: Microsoft-Windows-AdvertisingId
     target_arch: amd64
     version: 38655.38527.65535.65535
 
+  - target_component: Microsoft-Windows-CEIPEnable-Adm
+    target_arch: amd64
+    version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-CEIPEnable-Adm.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-Windows-CEIPEnable-Adm-Deployment
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-CEIPEnable-Adm-Deployment-LanguagePack
     target_arch: amd64
     version: 38655.38527.65535.65535
 
@@ -294,7 +311,13 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
 
+  - target_component: Microsoft-Windows-Compat-CompatTelRunner-DailyTask
+    target_arch: amd64
+    version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-Compat-GeneralTel
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Compat-Inventory-NonArpInv
     target_arch: amd64
     version: 38655.38527.65535.65535
 
@@ -567,6 +590,7 @@ updates:
 
 
   # Edge
+  
   - target_component: MicrosoftEdge-Autologger
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -574,6 +598,15 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-Edge-Angle
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Edge-AXHost
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-EdgeChromium
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-EdgeChromium-FirstTimeInstaller
     target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-Edge-EdgeContent
@@ -651,6 +684,9 @@ updates:
   # OneDrive
   - target_component: Microsoft-Windows-OneDrive-Setup
     target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-OneDrive-Setup
+    target_arch: wow64
     version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-OneDrive-Setup-Deployment
     target_arch: amd64
