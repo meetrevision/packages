@@ -737,3 +737,27 @@ updates:
   - target_component: Microsoft-Windows-SystemSettings-SettingsHandlers-OneDriveBackup
     target_arch: arm64
     version: 38655.38527.65535.65535
+
+  # Quick Assist
+  # This component doesn't exist in Windows 11 anymore, and can be separately downloaded from Microsoft Store
+  - target_component: Microsoft-Windows-QuickAssist
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-QuickAssist
+    target_arch: arm64.arm
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-QuickAssist
+    target_arch: arm64.x86
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-QuickAssist.Resources
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-QuickAssist.Resources
+    target_arch: arm64.arm
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-QuickAssist.Resources
+    target_arch: arm64.x86
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-QuickAssist-Deployment
+    target_arch: arm64
+    version: 38655.38527.65535.65535
