@@ -590,7 +590,6 @@ updates:
 
 
   # Edge
-  
   - target_component: MicrosoftEdge-Autologger
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -633,7 +632,13 @@ updates:
   - target_component: Microsoft-Windows-Edge-MicrosoftEdgeSH
     target_arch: amd64
     version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-MicrosoftEdge.appxsetup
+    target_arch: amd64
+    version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-MicrosoftEdgeBrowser
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-MicrosoftEdgeBrowser.Resources
     target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-MicrosoftEdgeDevToolsClient.AppxMain
@@ -729,4 +734,36 @@ updates:
     version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-QuickAssist-FOD-wow64-Deployment
     target_arch: wow64
+    version: 38655.38527.65535.65535
+
+  # Take a Test
+  - target_component: Microsoft-Windows-Management-SecureAssessment-Browser.AppxMain
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Management-SecureAssessment-Browser.AppxMain.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Management-SecureAssessment-Browser.AppxSetup
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Management-SecureAssessment-Capabilities
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Management-SecureAssessment-Config
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Management-SecureAssessment-Deployment
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Management-SecureAssessment-Deployment-LanguagePack
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Management-SecureAssessment-Diagnostics
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Management-SecureAssessment-Diagnostics.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Management-SecureAssessment-platforminterop
+    target_arch: amd64
     version: 38655.38527.65535.65535
