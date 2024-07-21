@@ -338,12 +338,13 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
 
-  - target_component: Microsoft-Windows-DeviceCensus
-    target_arch: amd64
-    version: 38655.38527.65535.65535
-  - target_component: Microsoft-Windows-DeviceCensus-Schedule-ClientServer
-    target_arch: amd64
-    version: 38655.38527.65535.65535
+  # Breaks drivers downloading from Windows Update
+  # - target_component: Microsoft-Windows-DeviceCensus
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-DeviceCensus-Schedule-ClientServer
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
 
   - target_component: Microsoft-Windows-KeyboardDiagnostic
     target_arch: amd64
