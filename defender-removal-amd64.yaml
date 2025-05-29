@@ -506,3 +506,26 @@ updates:
   # - target_component: Microsoft-Windows-SecHealthUI.AppxSetup
   #   target_arch: amd64
   #   version: 38655.38527.65535.65535
+
+  # Stripping Security Center introduces compatibility issues with Defender, it is disabled instead
+  # - target_component: Microsoft-Windows-Securitycenter-Adm
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-SecurityCenter-Broker
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-SecurityCenter-Broker
+  #   target_arch: wow64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-SecurityCenter-ControlPanel
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-SecurityCenter-ControlPanel
+  #   target_arch: wow64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-SecurityCenter-Core
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-SecurityCenter-Core
+  #   target_arch: wow64
+  #   version: 38655.38527.65535.65535
