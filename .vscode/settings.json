@@ -1,0 +1,8 @@
+{
+    "yaml.schemas": {
+        "./schema.json": [
+            "*.yaml"
+        ],
+    },
+    "yaml.validate": true
+}

@@ -29,7 +29,7 @@ updates:
       #     - key: DisableAntiSpyware
       #       type: REG_DWORD
       #       value: 1
-        # MDCoreSvc - prevents the package from being installed
+      # MDCoreSvc - prevents the package from being installed
       # - key_name: >-
       #     HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MDCoreSvc
       #   perUserVirtualization: false
@@ -37,7 +37,7 @@ updates:
       #     - key: Start
       #       type: REG_DWORD
       #       value: 4
-        # Security Center (We will most likely remove the actual component later)
+      # Security Center (We will most likely remove the actual component later)
       - key_name: >-
           HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wscsvc
         perUserVirtualization: false
@@ -58,7 +58,7 @@ updates:
         values:
           - key: SmartScreenEnabled
             type: REG_SZ
-            value: 'Off'
+            value: "Off"
       - key_name: >-
           HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\System
         perUserVirtualization: false
@@ -66,12 +66,12 @@ updates:
           - key: EnableSmartScreen
             type: REG_DWORD
             value: 0
-       # SmartScreen for Edge
+        # SmartScreen for Edge
       - key_name: >-
           HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge\SmartScreenEnabled
         perUserVirtualization: false
         values:
-          - key: '@'
+          - key: "@"
             type: REG_DWORD
             value: 0
       - key_name: >-
@@ -358,7 +358,6 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
 
-
   - target_component: Microsoft-OneCore-WebThreatDefense-Adm
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -441,7 +440,6 @@ updates:
   - target_component: Windows-Shield-Provider.Resources
     target_arch: amd64
     version: 38655.38527.65535.65535
-
 
   - target_component: Microsoft-Windows-SenseClient-Deployment
     target_arch: amd64

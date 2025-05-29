@@ -1,0 +1,131 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+        "copyright",
+        "package",
+        "target_arch",
+        "version",
+        "updates"
+    ],
+    "properties": {
+        "copyright": {
+            "type": "string",
+            "description": "Copyright information"
+        },
+        "package": {
+            "type": "string",
+            "description": "Package name"
+        },
+        "target_arch": {
+            "type": "string",
+            "enum": [
+                "amd64",
+                "arm64",
+                "wow64"
+            ],
+            "description": "Target architecture"
+        },
+        "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+\\.\\d+$",
+            "description": "Package version in format x.x.x.x"
+        },
+        "updates": {
+            "type": "array",
+            "description": "List of components to update",
+            "items": {
+                "type": "object",
+                "required": [
+                    "target_component",
+                    "target_arch",
+                    "version"
+                ],
+                "properties": {
+                    "target_component": {
+                        "type": "string",
+                        "description": "Name of the target component"
+                    },
+                    "target_arch": {
+                        "type": "string",
+                        "enum": [
+                            "amd64",
+                            "arm64",
+                            "arm64.arm",
+                            "arm64.x86",
+                            "x86",
+                            "wow64"
+                        ],
+                        "description": "Architecture of the target component"
+                    },
+                    "version": {
+                        "type": "string",
+                        "pattern": "^\\d+\\.\\d+\\.\\d+\\.\\d+$",
+                        "description": "Version number for the component"
+                    },
+                    "registry_keys": {
+                        "type": "array",
+                        "description": "Registry keys to modify",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "key_name",
+                                "perUserVirtualization",
+                                "values"
+                            ],
+                            "properties": {
+                                "key_name": {
+                                    "type": "string",
+                                    "description": "Registry key path"
+                                },
+                                "perUserVirtualization": {
+                                    "type": "boolean",
+                                    "description": "Whether to enable per-user virtualization"
+                                },
+                                "values": {
+                                    "type": "array",
+                                    "description": "Registry values to set",
+                                    "items": {
+                                        "type": "object",
+                                        "required": [
+                                            "key",
+                                            "type",
+                                            "value"
+                                        ],
+                                        "properties": {
+                                            "key": {
+                                                "type": "string",
+                                                "description": "Registry value name"
+                                            },
+                                            "type": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "REG_SZ",
+                                                    "REG_DWORD",
+                                                    "REG_QWORD",
+                                                    "REG_BINARY",
+                                                    "REG_MULTI_SZ",
+                                                    "REG_EXPAND_SZ"
+                                                ],
+                                                "description": "Registry value type"
+                                            },
+                                            "value": {
+                                                "description": "Registry value data",
+                                                "type": [
+                                                    "string",
+                                                    "number",
+                                                    "boolean"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

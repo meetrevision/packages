@@ -55,7 +55,7 @@ updates:
   - target_component: Microsoft-Windows-UsbCeip
     target_arch: wow64
     version: 38655.38527.65535.65535
-  
+
   - target_component: Microsoft-Windows-UsbCeip.Resources
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -139,7 +139,7 @@ updates:
   - target_component: Microsoft-Windows-RetailDemo-Service
     target_arch: amd64
     version: 38655.38527.65535.65535
-  
+
   - target_component: Microsoft-Windows-RetailDemo-Service.Resources
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -275,7 +275,7 @@ updates:
   - target_component: Microsoft-Windows-Compat-CompatTelRunner
     target_arch: amd64
     version: 38655.38527.65535.65535
-  
+
   - target_component: Microsoft-Windows-Compat-CompatTelRunner.Resources
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -378,14 +378,14 @@ updates:
   - target_component: Microsoft-Windows-Update-Aggregators
     target_arch: amd64
     version: 38655.38527.65535.65535
-    
+
   - target_component: Windows-System-Diagnostics-Telemetry-PlatformTelemetryClient
     target_arch: amd64
     version: 38655.38527.65535.65535
   - target_component: Windows-System-Diagnostics-Telemetry-PlatformTelemetryClient
     target_arch: wow64
     version: 38655.38527.65535.65535
-    
+
   - target_component: Windows-System-Diagnostics-TraceReporting-PlatformDiagnosticActions
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -400,7 +400,7 @@ updates:
   - target_component: Microsoft-Windows-UNP
     target_arch: amd64
     version: 38655.38527.65535.65535
-    
+
   - target_component: Microsoft-OneCoreUAP-Feedback-StringFeedbackEngine
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -478,7 +478,7 @@ updates:
   - target_component: Microsoft-Windows-Feedback-Service
     target_arch: amd64
     version: 38655.38527.65535.65535
-  
+
   - target_component: Microsoft-Windows-Feedback-Service.Resources
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -512,7 +512,7 @@ updates:
   - target_component: Microsoft-Windows-Flighting-Settings
     target_arch: wow64
     version: 38655.38527.65535.65535
-  
+
   - target_component: Microsoft-Windows-Flighting-Settings.Resources
     target_arch: wow64
     version: 38655.38527.65535.65535
@@ -525,7 +525,7 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
 
-  # Breaks benchmarking tools like Passmark 
+  # Breaks benchmarking tools like Passmark
   # - target_component: Microsoft-Windows-Data-Pdf.Events
   #   target_arch: amd64
   #   version: 38655.38527.65535.65535
@@ -545,7 +545,7 @@ updates:
   - target_component: Microsoft-Windows-PortableWorkspaces-SSO
     target_arch: amd64
     version: 38655.38527.65535.65535
-  
+
   - target_component: Microsoft-Windows-PortableWorkspaces-SSO.Resources
     target_arch: amd64
     version: 38655.38527.65535.65535
@@ -557,7 +557,6 @@ updates:
   - target_component: Microsoft-Windows-PortableWorkspaces-SysPrep
     target_arch: wow64
     version: 38655.38527.65535.65535
-
 
   # Edge
   # - target_component: MicrosoftEdge-Autologger
