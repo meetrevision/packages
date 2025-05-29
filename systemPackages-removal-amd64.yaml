@@ -10,14 +10,6 @@ updates:
     target_arch: wow64
     version: 38655.38527.65535.65535
 
-  - target_component: Microsoft-Windows-AcProxy
-    target_arch: amd64
-    version: 38655.38527.65535.65535
-
-  - target_component: Microsoft-Windows-AcProxy.Resources
-    target_arch: amd64
-    version: 38655.38527.65535.65535
-
   - target_component: Microsoft-Windows-AdvertisingId
     target_arch: amd64
     version: 38655.38527.65535.65535
