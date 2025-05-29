@@ -36,7 +36,7 @@ jobs:
             $cabFile = Get-ChildItem -Path "." -File -Filter "*.cab" | Select-Object -First 1
 
             $packageName = [System.IO.Path]::GetFileNameWithoutExtension($cabFile.Name)
-            Copy-Item -Path "files.txt" -Destination "..\release\files_$packageName.txt" -Force | Out-Null
+            Copy-Item -Path "files.txt" -Destination "..\release\$packageName.txt" -Force | Out-Null
               
             Move-Item -Path *.cab -Destination "..\release\" -Force | Out-Null
               
