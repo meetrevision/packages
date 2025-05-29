@@ -1,14 +1,13 @@
-name: Archive and Release
-
+name: Build CAB
 on:
   push:
     tags:
       - '*'
 
 env:
-    SXSC_REPO: 'https://github.com/Atlas-OS/sxsc'
+    SXSC_REPO: 'https://github.com/melo936/sxsc'
 
-jobs:
+jobs: 
   build:
     runs-on: windows-latest
 
@@ -16,35 +15,41 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-        # Credits to echnobas, Atlas and all the contributors.
       - name: Git clone sxsc
         run: |
-          git clone ${{ env.SXSC_REPO }} sxsc-src
-          cd sxsc-src
-          git checkout fd384df752dee77b11f687ec2f2ee667658605d7
+          git clone --depth=1 ${{ env.SXSC_REPO }} sxsc-src
 
-      - name: Build cab
+      # Credits to echnobas, he3als, Atlas and all the contributors.
+      - name: Build WinSxS packages
         run: |
-          pip install -r requirements.txt | Out-Null 
+          pip install -r requirements.txt | Out-Null
+          $tp = .\make-cert.ps1
+
           New-Item -ItemType Directory -Force -Path "..\release" | Out-Null
           foreach ($file in Get-ChildItem -Path "..\" -Recurse -File -Filter "*.yaml") {
             Copy-Item -Path $file.FullName -Destination "cfg.yaml" -Force | Out-Null
             (Get-Content cfg.yaml) -replace 'version: 1.0.0.0', "version: ${{ github.ref_name }}" | Set-Content cfg.yaml -Force
             python sxsc.py
             if ($LASTEXITCODE -ne 0) { exit 1 }
-            .\build.bat
+            .\start-build.ps1 -Thumbprint $tp
+              
+            $cabFile = Get-ChildItem -Path "." -File -Filter "*.cab" | Select-Object -First 1
+
+            $packageName = [System.IO.Path]::GetFileNameWithoutExtension($cabFile.Name)
+            Copy-Item -Path "files.txt" -Destination "..\release\files_$packageName.txt" -Force | Out-Null
+              
             Move-Item -Path *.cab -Destination "..\release\" -Force | Out-Null
-            .\clean.bat
+              
+            .\clean.ps1
           }
         working-directory: sxsc-src
-        #
       
   
       - name: Release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.TOKEN }}
-          file: release/*.cab
+          file: release/*
           tag: ${{ github.ref }}
           overwrite: true
           file_glob: true
