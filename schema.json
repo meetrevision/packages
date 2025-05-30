@@ -122,6 +122,39 @@
                                 }
                             }
                         }
+                    },
+                    "files": {
+                        "type": "array",
+                        "description": "Files to deploy or modify",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "file",
+                                "destination",
+                                "operation"
+                            ],
+                            "properties": {
+                                "file": {
+                                    "type": "string",
+                                    "description": "Name of the file to deploy"
+                                },
+                                "destination": {
+                                    "type": "string",
+                                    "description": "Destination path where the file will be placed. use $(runtime.windows) to refer to the runtime directory"
+                                },
+                                "operation": {
+                                    "type": "string",
+                                    "enum": [
+                                        "replace"
+                                    ],
+                                    "description": "Operation to perform with the file"
+                                },
+                                "text": {
+                                    "type": "string",
+                                    "description": "If empty, the specified file is deleted"
+                                }
+                            }
+                        }
                     }
                 }
             }
