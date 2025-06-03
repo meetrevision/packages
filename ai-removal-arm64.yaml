@@ -1,0 +1,121 @@
+copyright: MeetRevision
+package: Revision-ReviOS-AI-Removal
+target_arch: arm64
+version: 1.0.0.0
+updates:
+  # Recall
+  - target_component: UserExperience-AIX
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: UserExperience-AIX-Deployment
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  # - target_component: UserExperience-Core
+  #   target_arch: arm64
+  #   version: 38655.38527.65535.65535
+  - target_component: UserExperience-CoreAI
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: UserExperience-CoreAI-Deployment
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+
+  # Copilot
+  - target_component: Microsoft-Copilot
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Copilot-Deployment
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Copilot-Deployment-LanguagePack
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-SystemSettings-SettingsHandlers-Copilot
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+
+  - target_component: Revision-ReviOS-AI-Registry
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+    registry_keys:
+      # Disable Copilot button in Notepad
+      - key_name: >-
+          HKEY_LOCAL_MACHINE\SOFTWARE\Policies\WindowsNotepad
+        perUserVirtualization: false
+        values:
+          - key: DisableAIFeatures
+            type: REG_DWORD
+            value: 1
+      # Disable Click To Do
+      - key_name: >-
+          HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsAI
+        perUserVirtualization: false
+        values:
+          - key: DisableClickToDo
+            type: REG_DWORD
+            value: 1
+      # Disable Recall
+      - key_name: >-
+          HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsAI
+        perUserVirtualization: false
+        values:
+          - key: DisableAIDataAnalysis
+            type: REG_DWORD
+            value: 1
+      # Disable Copilot
+      - key_name: >-
+          HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot
+        perUserVirtualization: false
+        values:
+          - key: TurnOffWindowsCopilot
+            type: REG_DWORD
+            value: 1
+      # Let Windows apps make use of Text and image generation features of Windows = Force Deny
+      - key_name: >-
+          HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy
+        perUserVirtualization: false
+        values:
+          - key: LetAppsAccessSystemAIModels
+            type: REG_DWORD
+            value: 1
+      - key_name: >-
+          HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy
+        perUserVirtualization: false
+        values:
+          - key: LetAppsAccessGenerativeAI
+            type: REG_DWORD
+            value: 1
+
+  # - target_component: Revision-ReviOS-AI-Removal-Files
+  #   target_arch: arm64
+  #   version: 38655.38527.65535.65535
+  #   files:
+  #     - file: "CopilotNudges.dll"
+  #       destination: '$(runtime.windows)\SystemApps\MicrosoftWindows.Client.Core_cw5n1h2txyewy\'
+  #       operation: replace
+  #     - file: "WindowsCopilotRuntimeActions.exe"
+  #       destination: '$(runtime.windows)\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy'
+  #       operation: replace
+  #     - file: "WindowsCopilotRuntimeActions.dll"
+  #       destination: '$(runtime.windows)\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy'
+  #       operation: replace
+
+  # Machine Learning
+  # - target_component: Microsoft-Windows-MachineLearning
+  #   target_arch: arm64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-MachineLearning
+  #   target_arch: wow64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-AI-MachineLearning
+  #   target_arch: arm64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-AI-MachineLearning
+  #   target_arch: wow64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-DirectML
+  #   target_arch: arm64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-DirectML
+  #   target_arch: wow64
+  #   version: 38655.38527.65535.65535
