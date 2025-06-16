@@ -77,14 +77,14 @@ updates:
         values:
           - key: LetAppsAccessSystemAIModels
             type: REG_DWORD
-            value: 1
+            value: 2
       - key_name: >-
           HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy
         perUserVirtualization: false
         values:
           - key: LetAppsAccessGenerativeAI
             type: REG_DWORD
-            value: 1
+            value: 2
 
   # - target_component: Revision-ReviOS-AI-Removal-Files
   #   target_arch: amd64
