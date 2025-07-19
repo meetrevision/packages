@@ -1,0 +1,36 @@
+copyright: MeetRevision
+package: Revision-ReviOS-OneDrive-Removal
+target_arch: arm64
+version: 1.0.0.0
+updates:
+  - target_component: Microsoft-Windows-OneDrive-Setup
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-OneDrive-Setup-Deployment
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-OneDrive-Setup-Deployment-LanguagePack
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-OneDrive-SetupRegistry
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-OneDrive-SetupRegistry
+    target_arch: arm64.arm
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-OneDrive-SetupRegistry
+    target_arch: arm64.x86
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-OneDrive-Setup-WOW64-Deployment
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-OneDrive-Setup-WOW64-Deployment-LanguagePack
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-Windows-SystemSettings-SettingsHandlers-OneDriveBackup
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-SystemSettings-SettingsHandlers-OneDriveBackup.Resources
+    target_arch: arm64
+    version: 38655.38527.65535.65535
