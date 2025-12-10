@@ -379,9 +379,10 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
 
-  - target_component: Windows-System-Diagnostics-Telemetry-PlatformTelemetryClient
-    target_arch: amd64
-    version: 38655.38527.65535.65535
+  # Breaks Live Caption and Voice Access
+  # - target_component: Windows-System-Diagnostics-Telemetry-PlatformTelemetryClient
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
   - target_component: Windows-System-Diagnostics-Telemetry-PlatformTelemetryClient
     target_arch: wow64
     version: 38655.38527.65535.65535
