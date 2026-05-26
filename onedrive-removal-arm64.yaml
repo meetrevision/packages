@@ -6,6 +6,12 @@ updates:
   - target_component: Microsoft-Windows-OneDrive-Setup
     target_arch: arm64
     version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-OneDrive-Setup
+    target_arch: arm64.arm
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-OneDrive-Setup
+    target_arch: arm64.x86
+    version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-OneDrive-Setup-Deployment
     target_arch: arm64
     version: 38655.38527.65535.65535
