@@ -49,7 +49,10 @@ updates:
   #   target_arch: arm64
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-SQMApi
-  #   target_arch: wow64
+  #   target_arch: arm64.arm
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-SQMApi
+  #   target_arch: arm64.x86
   #   version: 38655.38527.65535.65535
 
   - target_component: Microsoft-Windows-UsbCeip
@@ -308,13 +311,16 @@ updates:
 
   #  regex: BthTelemetry.dll
   # - target_component: Microsoft-Windows-CoreSystem-Bluetooth-Telemetry
-  # target_arch: arm64
-  # version: 38655.38527.65535.65535
+  #   target_arch: arm64
+  #   version: 38655.38527.65535.65535
 
   # regex: BthTelemetry.dll
   # - target_component: Microsoft-Windows-CoreSystem-Bluetooth-Telemetry
-  # target_arch: wow64
-  # version: 38655.38527.65535.65535
+  #   target_arch: arm64.arm
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-CoreSystem-Bluetooth-Telemetry
+  #   target_arch: arm64.x86
+  #   version: 38655.38527.65535.65535
 
   - target_component: Microsoft-Windows-DataCollection-Adm
     target_arch: arm64
@@ -529,7 +535,11 @@ updates:
   #   version: 38655.38527.65535.65535
 
   # - target_component: Microsoft-Windows-Flighting-FeatureConfiguration
-  #   target_arch: wow64
+  #   target_arch: arm64.arm
+  #   version: 38655.38527.65535.65535
+  
+  # - target_component: Microsoft-Windows-Flighting-FeatureConfiguration
+  #   target_arch: arm64.x86
   #   version: 38655.38527.65535.65535
 
   - target_component: Microsoft-Windows-Flighting-Settings
@@ -554,7 +564,11 @@ updates:
   #   version: 38655.38527.65535.65535
 
   # - target_component: Microsoft-Windows-Data-Pdf.Events
-  #   target_arch: wow64
+  #   target_arch: arm64.arm
+  #   version: 38655.38527.65535.65535
+  
+  # - target_component: Microsoft-Windows-Data-Pdf.Events
+  #   target_arch: arm64.x86
   #   version: 38655.38527.65535.65535
 
   # - target_component: Microsoft-Windows-Data-Pdf
@@ -562,7 +576,11 @@ updates:
   #   version: 38655.38527.65535.65535
 
   # - target_component: Microsoft-Windows-Data-Pdf
-  #   target_arch: wow64
+  #   target_arch: arm64.arm
+  #   version: 38655.38527.65535.65535
+  
+  # - target_component: Microsoft-Windows-Data-Pdf
+  #   target_arch: arm64.x86
   #   version: 38655.38527.65535.65535
 
   # - target_component: Microsoft-Windows-PortableWorkspaces-SSO
@@ -630,13 +648,13 @@ updates:
   #   target_arch: arm64
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-MicrosoftEdge.appxsetup
-  #   target_arch: amd64
+  #   target_arch: arm64
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-MicrosoftEdgeBrowser
   #   target_arch: arm64
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-MicrosoftEdgeBrowser.Resources
-  #   target_arch: amd64
+  #   target_arch: arm64
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-MicrosoftEdgeDevToolsClient.AppxMain
   #   target_arch: arm64
