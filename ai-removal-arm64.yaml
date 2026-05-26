@@ -105,17 +105,26 @@ updates:
   #   target_arch: arm64
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-MachineLearning
-  #   target_arch: wow64
+  #   target_arch: arm64.arm
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-MachineLearning
+  #   target_arch: arm64.x86
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-AI-MachineLearning
   #   target_arch: arm64
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-AI-MachineLearning
-  #   target_arch: wow64
+  #   target_arch: arm64.arm
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-AI-MachineLearning
+  #   target_arch: arm64.x86
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-DirectML
   #   target_arch: arm64
   #   version: 38655.38527.65535.65535
   # - target_component: Microsoft-Windows-DirectML
-  #   target_arch: wow64
+  #   target_arch: arm64.arm
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-DirectML
+  #   target_arch: arm64.x86
   #   version: 38655.38527.65535.65535
