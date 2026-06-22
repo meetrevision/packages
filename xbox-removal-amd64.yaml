@@ -1,0 +1,180 @@
+copyright: MeetRevision
+package: Revision-ReviOS-Xbox-Removal
+target_arch: amd64
+version: 1.0.0.0
+updates:
+  - target_component: Microsoft-Gaming-GameBar-Internal-PresenceWriter
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Gaming-GameBar-Internal-PresenceWriter
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-Media-Capture-Internal-BroadcastDVR
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Media-Capture-Internal-BroadcastDVR.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-OneCore-Multimedia-BroadcastDVR
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-OneCore-Multimedia-BroadcastDVR
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-OneCore-Multimedia-BroadcastDVR-Capabilities
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  # Needed for the new Xbox's gaming interface - Full Screen Experience (FSE)
+  # - target_component: Microsoft-Windows-Gaming-Configuration
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-SystemSettings-SettingsHandlers-Gaming
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Windows-SystemSettings-SettingsHandlers-Gaming.Resources
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-Gaming-Services-Instrumentation
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  # Policy
+  - target_component: Microsoft-Windows-GDVR-Adm
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Windows-GDVR-Adm.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-Xbox-ShellCore-GamingUI-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-ShellCore-GamingUI-Component
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-Windows-XboxAccessory-Capabilities
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-Xbox-AuthManager-Client-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-AuthManager-Client-Component
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-AuthManager-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-AuthManager-Component.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  # XboxGameCallableUI aka title-callable UI (TCUI)
+  # https://learn.microsoft.com/en-us/gaming/playfab/community/voice-communications/party-speech-to-text-ux-guidelines#title-callable-ui-tcui
+  - target_component: Microsoft-Xbox-GameCallableUI.appxmain
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameCallableUI.appxmain.resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameCallableUI.appxsetup
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameCallableUI.toolkit
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-Xbox-GameChatOverlayExt
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameChatOverlayExt
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameChatTranscription-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameChatTranscription-Component
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  #  Keep Game Mode
+  # - target_component: Microsoft-Xbox-GameMode-Component
+  #   target_arch: amd64
+  #   version: 38655.38527.65535.65535
+  # - target_component: Microsoft-Xbox-GameMode-Component
+  #   target_arch: wow64
+  #   version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameOverlay
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameOverlay
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameOverlay.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameOverlay.Resources
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-Xbox-GameStreamingExt-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  - target_component: Windows-Gaming-Preview-GamesEnumeration-WinRT
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-Preview-GamesEnumeration-WinRT
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-UI-GameBar-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-UI-GameBar-Component
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-XboxLive-Storage-Client-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-XboxLive-Storage-Client-Component
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-XboxLive-Storage-Service-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-XboxLive-Storage-Service-Component.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-XboxLive-Storage-WinRT-Common-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-XboxLive-Storage-WinRT-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-XboxLive-Storage-WinRT-Component
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Gaming-XboxLive-Storage-XblGameSaveExt-OneCore-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Networking-XboxLive-Windows-Component
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Networking-XboxLive-Windows-Component
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Networking-XboxLive-Windows-Component.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Networking-XboxLive-Windows-Component.Resources
+    target_arch: wow64
+    version: 38655.38527.65535.65535
+
+  - target_component: Windows-Internal-Gaming-ForceFeedback-WinRT
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Windows-Internal-Gaming-ForceFeedback-WinRT
+    target_arch: wow64
+    version: 38655.38527.65535.65535
