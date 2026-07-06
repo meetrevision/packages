@@ -4,6 +4,9 @@ on:
     tags:
       - '*'
 
+permissions:
+  contents: write
+
 env:
     SXSC_REPO: 'https://github.com/melo936/sxsc'
 
@@ -14,6 +17,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Install validation dependencies
+        run: python -m pip install --upgrade pyyaml jsonschema
+
+      - name: Validate package YAML
+        run: python scripts/validate_packages.py
 
       - name: Git clone sxsc
         run: |
@@ -48,7 +57,7 @@ jobs:
       - name: Release
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.TOKEN }}
+          repo_token: ${{ github.token }}
           file: release/*
           tag: ${{ github.ref }}
           overwrite: true
