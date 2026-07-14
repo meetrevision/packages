@@ -32,10 +32,15 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
 
-  - target_component: Microsoft-Windows-SQM-Consolidator-Base
+
+  # found in 26H2
+  - target_component: Microsoft-Windows-SQM-Consolidator
     target_arch: amd64
     version: 38655.38527.65535.65535
 
+  - target_component: Microsoft-Windows-SQM-Consolidator-Base
+    target_arch: amd64
+    version: 38655.38527.65535.65535
   - target_component: Microsoft-Windows-SQM-Consolidator-Base.Resources
     target_arch: amd64
     version: 38655.38527.65535.65535
