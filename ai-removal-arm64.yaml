@@ -34,6 +34,17 @@ updates:
     target_arch: arm64
     version: 38655.38527.65535.65535
 
+  - target_component: Microsoft-OneCore-CapabilityAccess-Adm-windowsAI
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-OneCore-CapabilityAccess-Adm-windowsAI.Resources
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-AIFabric-CBS-1-6
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+
   - target_component: Revision-ReviOS-AI-Registry
     target_arch: arm64
     version: 38655.38527.65535.65535
