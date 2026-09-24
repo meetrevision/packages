@@ -45,6 +45,22 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
 
+  # Experimental Agentic Features
+  # https://support.microsoft.com/en-us/windows/ai/ai-features/experimental-agentic-features
+  - target_component: Microsoft-OneCore-IsoEnvBroker
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-OneCore-IsoEnvBroker.Resources
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-OneCore-AgenticPlatform
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
+  - target_component: Microsoft-Windows-AIComponentMgmt
+    target_arch: amd64
+    version: 38655.38527.65535.65535
+
   - target_component: Revision-ReviOS-AI-Registry
     target_arch: amd64
     version: 38655.38527.65535.65535
