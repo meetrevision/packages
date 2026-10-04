@@ -10,6 +10,9 @@ updates:
   - target_component: UserExperience-AIX-Deployment
     target_arch: arm64
     version: 38655.38527.65535.65535
+  - target_component: UserExperience-AIX-Deployment-LanguagePack
+    target_arch: arm64
+    version: 38655.38527.65535.65535
   # - target_component: UserExperience-Core
   #   target_arch: arm64
   #   version: 38655.38527.65535.65535
@@ -51,6 +54,12 @@ updates:
     target_arch: arm64
     version: 38655.38527.65535.65535
   - target_component: Microsoft-OneCore-IsoEnvBroker.Resources
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-OneCore-IsoSessionCore
+    target_arch: arm64
+    version: 38655.38527.65535.65535
+  - target_component: Microsoft-OneCore-IsoSessionServer
     target_arch: arm64
     version: 38655.38527.65535.65535
   - target_component: Microsoft-OneCore-AgenticPlatform
