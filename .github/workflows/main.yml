@@ -26,6 +26,13 @@ jobs:
           $tp = .\make-cert.ps1
 
           New-Item -ItemType Directory -Force -Path "..\release" | Out-Null
+
+          if (Test-Path "..\stubs") {
+            Get-ChildItem -Path "..\stubs" -Filter "*.ps1" | ForEach-Object {
+              & $_.FullName -Arch both -OutputDir "..\stubs\bin"
+            }
+          }
+
           foreach ($file in Get-ChildItem -Path "..\" -Recurse -File -Filter "*.yaml") {
             Copy-Item -Path $file.FullName -Destination "cfg.yaml" -Force | Out-Null
             (Get-Content cfg.yaml) -replace 'version: 1.0.0.0', "version: ${{ github.ref_name }}" | Set-Content cfg.yaml -Force
@@ -42,6 +49,21 @@ jobs:
               
             .\clean.ps1
           }
+
+          $lines = @(
+            "### Staged Stub Binaries (SHA256)",
+            "",
+            "| Architecture | File | SHA256 Hash |",
+            "|---|---|---|"
+          )
+          if (Test-Path "..\stubs\bin") {
+            Get-ChildItem -Path "..\stubs\bin" -Recurse -Filter "*.dll" | ForEach-Object {
+              $h = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower()
+              $a = $_.Directory.Name
+              $lines += "| ``$a`` | ``$($_.Name)`` | ``$h`` |"
+            }
+          }
+          $lines -join "`n" | Out-File -FilePath "..\release\release_notes.md" -Encoding utf8
         working-directory: sxsc-src
       
   
@@ -50,4 +72,5 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           tag_name: ${{ github.ref_name }}
+          body_path: release/release_notes.md
           files: release/*

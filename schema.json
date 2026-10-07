@@ -152,6 +152,30 @@
                                 "text": {
                                     "type": "string",
                                     "description": "If empty, the specified file is deleted"
+                                },
+                                "source": {
+                                    "type": "string",
+                                    "description": "Path to local file to deploy as replacement"
+                                },
+                                "stub": {
+                                    "description": "PE stub configuration for generating minimal import stub",
+                                    "oneOf": [
+                                        {
+                                            "type": "array",
+                                            "items": { "type": "string" }
+                                        },
+                                        {
+                                            "type": "object",
+                                            "required": ["exports"],
+                                            "properties": {
+                                                "exports": {
+                                                    "type": "array",
+                                                    "items": { "type": "string" }
+                                                },
+                                                "arch": { "type": "string" }
+                                            }
+                                        }
+                                    ]
                                 }
                             }
                         }

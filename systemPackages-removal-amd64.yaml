@@ -45,7 +45,7 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
 
-  # sqmapi dll is present in Revision, which this would remove
+  # telemetry-removal covers this with new approach
   # - target_component: Microsoft-Windows-SQMApi
   #   target_arch: amd64
   #   version: 38655.38527.65535.65535
@@ -366,11 +366,11 @@ updates:
     target_arch: amd64
     version: 38655.38527.65535.65535
 
+  # telemetry-removal covers this with new approach
   # utcapi.dll utcutil.dll
   # - target_component: Microsoft-Windows-Unified-Telemetry-Client-WoWOnly
   # target_arch: wow64
   # version: 38655.38527.65535.65535
-
   # utcapi.dll utcutil.dll
   # - target_component: Microsoft-Windows-Unified-Telemetry-Client
   # target_arch: amd64
