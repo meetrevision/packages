@@ -50,20 +50,6 @@ jobs:
             .\clean.ps1
           }
 
-          $lines = @(
-            "### Staged Stub Binaries (SHA256)",
-            "",
-            "| Architecture | File | SHA256 Hash |",
-            "|---|---|---|"
-          )
-          if (Test-Path "..\stubs\bin") {
-            Get-ChildItem -Path "..\stubs\bin" -Recurse -Filter "*.dll" | ForEach-Object {
-              $h = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower()
-              $a = $_.Directory.Name
-              $lines += "| ``$a`` | ``$($_.Name)`` | ``$h`` |"
-            }
-          }
-          $lines -join "`n" | Out-File -FilePath "..\release\release_notes.md" -Encoding utf8
         working-directory: sxsc-src
       
   
@@ -72,5 +58,4 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           tag_name: ${{ github.ref_name }}
-          body_path: release/release_notes.md
           files: release/*
